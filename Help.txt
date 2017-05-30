@@ -1,0 +1,83 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\priyanka.bansode>d:
+
+D:\>mkdir git
+
+D:\>cd git\
+
+D:\git>git init
+Initialized empty Git repository in D:/git/.git/
+
+D:\git>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git>git add abc.txt
+
+D:\git>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   abc.txt
+
+
+D:\git>git commit -m "Commit 1 30-5-2017"
+[master (root-commit) d8e13b5] Commit 1 30-5-2017
+ Committer: Priyanka Bansode <priyanka.bansode@Eternus.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 abc.txt
+
+D:\git>git config --global user.email "bansodepriyankadilip@gmail.com"
+
+D:\git>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\git>git clone https://github.com/priyankabansode400/Demo.git
+Cloning into 'Demo'...
+warning: You appear to have cloned an empty repository.
+
+D:\git>git init
+Reinitialized existing Git repository in D:/git/.git/
+
+D:\git>git add abc.txt
+
+D:\git>git commit -m "Commit 1 30-5-2017"
+On branch master
+nothing to commit, working tree clean
+
+D:\git>git remote add origin https://github.com/priyankabansode400/Demo.git
+
+D:\git>git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 248 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/priyankabansode400/Demo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
